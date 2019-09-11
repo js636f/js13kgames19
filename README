@@ -1,0 +1,72 @@
+Don't go back - Maze Game
+
+"Everything behind you is on fire. Don't go back."
+
+Quick Start
+
+Play > Play Main Game 
+Use arrows keys to control the hero.
+
+Description
+
+This is a maze game. The main features of the game are:
+1) You may go back, but you shouldn't. It's like everything behind you is on fire. The more times you have visited the place - the more dangerous it became.
+2) Field of view can be restricted.
+
+Controls:
+
+Use arrows keys to control the hero.
+
+Menu in default (main) mode (right after loading)
+
+Play > Play Main Game - runs main game sequence (10 levels). If you finished the level in this mode - your results will be saved (another mode results will not be saved). If you managed to save more life than in previous saved record - it will be replaced. So, the more life you'll save - the better. Next main level in "rating" mode will only be loaded if you finish the previous level. If you finish all levels - you'll have "Main Challenge Completed" entry in Records.
+Play > (Main Level Name) - play selected level from main game (to prepare for main game, for example, or just for fun).
+
+Generate > Small/Medium/Large Level - makes random level to play (Recursive Backtracker algorithm).
+
+Load > From Browser - shows list of saved levels (you may load them or delete them).
+Load > From Json - you may load level's JSON to load a level (if someone shared it, for example, or if you made it and saved somewhere).
+
+Records - shows records screen (only for levels from main game).
+
+Help - shows Help screen.
+
+Checkbox:
+
+Creator's Mode - if this one is checked you will come to the Creator's Mode. Uncheck it to return to Main mode.
+
+If you would like to create new level - you may use Create menu to create new Small/Medium/Large level.
+
+Menu in creator's mode (after checking the Creator's Mode checkbox):
+
+Create > New Small/Medium/Large Level - creates new empty level.
+
+Creator's Tools - contains some tools:
+Creator's Tools > Edit Current Level - turns on editing current level after Try mode.
+Creator's Tools > Try Edited Level - turns on game-like environment to test your current level.
+Creator's Tools > Save To Browser - saves current level to browser's storage (available in Edit and Try modes).
+Creator's Tools > Load From Browser - shows list of saved levels to load and edit/try.
+Creator's Tools > Export Level JSON - exports level's JSON - it can be copied from JSON field and saved somewhere.
+Creator's Tools > Load Level JSON - shows a window with a field for level's JSON exported before.
+
+Controls in Creator's Mode
+
+Level Name - name of the current level.
+Player Life - amount of player's life.
+Visible Area - visible area - can be changed from 1 to level's size.
+JSON - exported JSON (cleared after copying).
+
+Keys usage in Creator's Mode:
+
+Arrows - movements.
+A/S/D/W - create/delete Left/Down/Right/Top wall of the current cell.
+Z - set level's start cell.
+X - set level's end cell.
+
+Have fun :-)
+
+Sources of some code:
+Time formatting: https://stackoverflow.com/questions/19700283/how-to-convert-time-milliseconds-to-hours-min-sec-format-in-javascript
+Menu: https://codepen.io/andornagy/pen/xhiJH
+Game loop: https://www.sitepoint.com/quick-tip-game-loop-in-javascript/
+Sorting: https://stackoverflow.com/questions/8107226/how-to-sort-strings-in-javascript-numerically
